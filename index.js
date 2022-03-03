@@ -25,4 +25,4 @@ app.use("/api/login",loginRouter);
 app.use("/api/password-reset",passwordResetRouter); 
 app.use("/api/color-app",colorUserrouter); 
 
-app.listen(PORT, () => console.log(`Listening to port ${PORT}`));
+app.listen(PORT, () => console.log(`Listening to port ${PORT}`)); 
