@@ -43,7 +43,7 @@ router.post("/", async (req, res) => {
   } catch (error) {
     console.log(error);
     //showcasing the error if the server has some issues
-    res.status(500).send({ message: "Not a Valid Details" });
+    res.status(500).send({ message: "Strong Password & Valid Email is required" });
   }
 });
 
