@@ -20,7 +20,7 @@ router.post("/", async (req, res) => {
   try {
     //error handling
     const { error } = validate(req.body);
-    if (error) return res.status(400).send({ message: error });
+    if (error) return res.status(400).send({ message: error.details[0].message});
 
     //validating the user deatils
     const user = await User.findOne({ email: req.body.email });
